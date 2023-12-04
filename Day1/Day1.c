@@ -2,6 +2,16 @@
 #include <string.h>
 #include <math.h>
 
+/*
+Comments mostly for myself later on to remember what I did here:
+- Uses getc() to read through the input character by character
+- Uses a boolean for first found, and any digit found is set to last
+- Uses the newline character as a way to finalize what the last digit is
+- To map the natural language numbers to digits I took advantage of the ability to compare substrings,
+  combined with the fact that you can convert a set of characters into an int string to be stored
+- Almost certainly the dumbest way to do this, but I committed to the bit to see if I could
+*/
+
 // Making these definitions global to not have to pass these things into the function
 char nine[42];
 char eight[42];
